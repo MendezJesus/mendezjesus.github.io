@@ -1,9 +1,9 @@
 CLASSES = {
-  0: 'Daisy',
-  1: 'Dandelion',
-  2: 'Rose',
-  3: 'Sunflower',
-  4: 'Tulips',
+  0: 'class0',
+  1: 'class1',
+  2: 'class2',
+  3: 'class3',
+  4: 'class4',
 };
 
 const MODEL_PATH =
