@@ -26,14 +26,14 @@ const demo = async () => {
   status('');
 
   // Make a prediction through the locally hosted cat.jpg.
-  const catElement = document.getElementById('cat');
-  if (catElement.complete && catElement.naturalHeight !== 0) {
-    predict(catElement);
-    catElement.style.display = '';
+  const inputImage = document.getElementById('inputimg');
+  if (inputImage.complete && inputImage.naturalHeight !== 0) {
+    predict(inputImage);
+    inputImage.style.display = '';
   } else {
-    catElement.onload = () => {
-      predict(catElement);
-      catElement.style.display = '';
+    inputImage.onload = () => {
+      predict(inputImage);
+      inputImage.style.display = '';
     }
   }
 
